@@ -1,0 +1,56 @@
+/* Base styling */
+h1 {
+    text-align: center;
+}
+body {
+    font-family: 'Roboto';
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul {
+    list-style-type: none;
+    background-color: hsl(49, 80%, 71%);
+    padding: 0;
+    margin: 5px;
+    overflow: hidden;
+}
+.navbar li {
+    float: left;
+    width: 25%; /* Make links occupy equal space */
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover {
+    background-color: hsl(46, 69%, 65%);
+}
+
+/* Make the layout responsive */
+@media screen and (max-width: 768px) {
+    .navbar li {
+        float: none;
+        width: 100%; /* Stack links vertically on small screens */
+    }
+    iframe {
+        width: 100%;
+        height: auto; /* Make videos responsive */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+    h1 {
+        font-size: 1.5em; /* Reduce heading size */
+    }
+    img {
+        width: 100%; /* Make images responsive */
+        height: auto;
+    }
+}
